@@ -21,7 +21,7 @@ Galician dictionary (i.e. word list) for aspell.
 Dicionário galego (normativa de mínimos) para o Aspell.
 
 %description -l pl
-S³ownik galicyjski (lista s³ów) dla aspella.
+S³ownik (lista s³ów) galicyjski dla aspella.
 
 %prep
 %setup -q -n %{name}-%{version}-%{subv}
