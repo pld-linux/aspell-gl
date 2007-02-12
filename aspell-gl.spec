@@ -1,6 +1,6 @@
 Summary:	Galician dictionary for aspell
-Summary(gl.UTF-8):   Dicionário galego (normativa de mínimos) para o Aspell
-Summary(pl.UTF-8):   Słownik galicyjski dla aspella
+Summary(gl.UTF-8):	Dicionário galego (normativa de mínimos) para o Aspell
+Summary(pl.UTF-8):	Słownik galicyjski dla aspella
 Name:		aspell-gl
 Version:	0.50
 %define	subv	0
