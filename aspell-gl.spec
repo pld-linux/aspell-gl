@@ -1,6 +1,6 @@
 Summary:	Galician dictionary for aspell
-Summary(gl):	Dicion·rio galego (normativa de mÌnimos) para o Aspell
-Summary(pl):	S≥ownik galicyjski dla aspella
+Summary(gl.UTF-8):   Dicion√°rio galego (normativa de m√≠nimos) para o Aspell
+Summary(pl.UTF-8):   S≈Çownik galicyjski dla aspella
 Name:		aspell-gl
 Version:	0.50
 %define	subv	0
@@ -17,11 +17,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Galician dictionary (i.e. word list) for aspell.
 
-%description -l gl
-Dicion·rio galego (normativa de mÌnimos) para o Aspell.
+%description -l gl.UTF-8
+Dicion√°rio galego (normativa de m√≠nimos) para o Aspell.
 
-%description -l pl
-S≥ownik galicyjski (lista s≥Ûw) dla aspella.
+%description -l pl.UTF-8
+S≈Çownik galicyjski (lista s≈Ç√≥w) dla aspella.
 
 %prep
 %setup -q -n %{name}-%{version}-%{subv}
