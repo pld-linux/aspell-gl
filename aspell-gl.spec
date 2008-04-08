@@ -7,7 +7,7 @@ Version:	0.50
 Release:	1
 License:	GPL v2+
 Group:		Applications/Text
-Source0:	ftp://ftp.gnu.org/gnu/aspell/dict/gl/%{name}-%{version}-%{subv}.tar.bz2
+Source0:	http://ftp.gnu.org/gnu/aspell/dict/gl/%{name}-%{version}-%{subv}.tar.bz2
 # Source0-md5:	0cd3c4e3e325e080689657f03eff8e8e
 URL:		http://aspell.sourceforge.net/
 BuildRequires:	aspell >= 2:0.50.0
