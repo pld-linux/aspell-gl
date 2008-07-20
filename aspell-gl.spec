@@ -2,16 +2,17 @@ Summary:	Galician dictionary for aspell
 Summary(gl.UTF-8):	Dicionário galego (normativa de mínimos) para o Aspell
 Summary(pl.UTF-8):	Słownik galicyjski dla aspella
 Name:		aspell-gl
-Version:	0.50
-%define	subv	0
+Version:	0.5a
+%define	subv	2
 Release:	1
-License:	GPL v2+
+Epoch:		1
+License:	GPL v2
 Group:		Applications/Text
-Source0:	http://ftp.gnu.org/gnu/aspell/dict/gl/%{name}-%{version}-%{subv}.tar.bz2
-# Source0-md5:	0cd3c4e3e325e080689657f03eff8e8e
+Source0:	http://ftp.gnu.org/gnu/aspell/dict/gl/aspell6-gl-%{version}-%{subv}.tar.bz2
+# Source0-md5:	7502e37bf2a1c4a0a05f9a6e755e7c21
 URL:		http://aspell.sourceforge.net/
-BuildRequires:	aspell >= 2:0.50.0
-Requires:	aspell >= 2:0.50.0
+BuildRequires:	aspell >= 3:0.60.0
+Requires:	aspell >= 3:0.60.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,7 +25,7 @@ Dicionário galego (normativa de mínimos) para o Aspell.
 Słownik galicyjski (lista słów) dla aspella.
 
 %prep
-%setup -q -n %{name}-%{version}-%{subv}
+%setup -q -n aspell6-gl-%{version}-%{subv}
 
 %build
 # note: configure is not autoconf-generated
@@ -43,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Copyright README
-%lang(gl) %doc doc/{leme.txt,normas.txt}
+%doc Copyright README doc/README.minimos
+%lang(gl) %doc doc/normas.txt
 %{_libdir}/aspell/*
 %{_datadir}/aspell/*
